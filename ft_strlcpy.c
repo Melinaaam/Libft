@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 13:45:43 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:57:25 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/04 15:38:27 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 
 	srcsize = ft_strlen((char *)src);
 	i = 0;
+	if ((dest == NULL) || (src == NULL))
+		return (0);
 	if (n == 0)
 		return (srcsize);
 	while (src[i] && i < n - 1)
@@ -34,6 +36,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 		i++;
 	}
 	dest[i] = '\0';
+	while (src[i])
+		i++;
 	return (i);
 }
 /*
