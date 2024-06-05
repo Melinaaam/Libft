@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 15:08:10 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:32:59 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 14:38:51 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0')
+	while (*s)
 	{
 		if (*s == (char)c)
 		{
@@ -22,10 +22,8 @@ char	*ft_strchr(const char *s, int c)
 		}
 		s++;
 	}
-	if (c == '\0')
-	{
+	if ((char)c == '\0')
 		return ((char *)s);
-	}
 	return (NULL);
 }
 /*

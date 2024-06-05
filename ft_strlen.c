@@ -6,18 +6,18 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 09:43:16 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:33:29 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 14:19:42 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i])
 	{
 		i++;
 	}
