@@ -6,19 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 13:40:15 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:57:47 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:41 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
-
-/*
-compare n caractere de deux chaines et renvoi :
--1 si s1 < s2
-0 si s1 = s2
-+1 si s1 > s2
-*/
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

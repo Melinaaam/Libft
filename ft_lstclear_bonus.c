@@ -6,17 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 14:38:47 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:21:13 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:59 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Supprime et libère la mémoire de l’élément passé en
-paramètre, et de tous les éléments qui suivent, à
-l’aide de ’del’ et de free(3)
-Enfin, le pointeur initial doit être mis à NULL
-*/
+
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;

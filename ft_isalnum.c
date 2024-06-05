@@ -6,12 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:40:09 by memotyle          #+#    #+#             */
-/*   Updated: 2024/05/30 14:54:33 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:33 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//vérifie s’il s’agit d’un caractère alphanumérique.
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')

@@ -6,16 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 12:07:59 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:47:42 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:32:54 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-retourne un tableau de chaine de caractere obtenu
-en separant 's' a l'aide du caractere 'c'==> utilise comme delimitateur
-le tableau doit etre termine par NULL
-*/
 
 void	libere_tab(char **strs, int i)
 {

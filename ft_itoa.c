@@ -6,16 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 17:27:53 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:47:03 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:49 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-convertit un entier vers string
-retourne chaine de caracteres representant l'entier 'n' recu en argument.
-Les nombres neg doivent etre geres.
-*/
+
 int	count_number(int n)
 {
 	int	i;

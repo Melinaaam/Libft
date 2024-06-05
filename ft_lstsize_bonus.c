@@ -6,21 +6,19 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 10:56:08 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:20:42 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 10:12:26 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Compte le nombre d’éléments de la liste
-}*/
+
 int	ft_lstsize(t_list *lst)
 {
 	int	i;
 
 	i = 0;
 	if (!lst)
-		return(NULL);
+		return (0);
 	while (lst)
 	{
 		lst = lst->next;

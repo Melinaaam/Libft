@@ -6,15 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 12:31:36 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:19:50 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:52 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Ajoute l’élément ’new’ à la fin de la liste
-*/
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;

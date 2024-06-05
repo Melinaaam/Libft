@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melinamotylewski <melinamotylewski@stud    +#+  +:+       +#+        */
+/*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 13:02:52 by memotyle          #+#    #+#             */
-/*   Updated: 2024/05/25 13:03:49 by melinamotyl      ###   ########.fr       */
+/*   Updated: 2024/06/05 09:34:07 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//convertit la lettre c en majuscule si c'est possible.
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

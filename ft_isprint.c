@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melinamotylewski <melinamotylewski@stud    +#+  +:+       +#+        */
+/*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 11:40:13 by memotyle          #+#    #+#             */
-/*   Updated: 2024/05/25 15:29:47 by melinamotyl      ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:45 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//vérifie s'il s'agit d'un caractère imprimable, y compris l'espace.
+
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

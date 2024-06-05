@@ -6,22 +6,22 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 08:16:21 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:20:38 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:35:35 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*liste chainee = enchainement de plusieurs listes*/
+
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;
 
 	list = (t_list *)malloc(sizeof(t_list));
 	if (list == NULL)
-		return(NULL);
+		return (NULL);
 	list->content = content;
 	list->next = NULL;
-	return(list);
+	return (list);
 }
 /*
 #include <stdio.h>

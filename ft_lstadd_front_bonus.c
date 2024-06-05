@@ -6,14 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 09:19:52 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:19:55 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:56 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Ajoute l’élément ’new’ au début de la liste
-*/
+
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst == NULL)

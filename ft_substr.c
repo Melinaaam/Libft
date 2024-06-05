@@ -6,16 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 10:33:29 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:48:08 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:59 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-retourne une chaine issue de la chaine 's', commence a l'indice 'start'
-et fait la longueur de 'len'
-*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

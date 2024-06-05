@@ -6,18 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:54:53 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:44:50 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:19 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-
-/*
-retourne nlle chaine qui est le resultat de la concatenisation de s1 et s2
-sans modifier la chaine de destination
-alloue memoire necessaire
-*/
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

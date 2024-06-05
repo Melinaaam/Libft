@@ -6,12 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:33:24 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/03 16:52:05 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:41 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//vérifie s’il s’agit d’un chiffre (de 0 à 9).
+
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

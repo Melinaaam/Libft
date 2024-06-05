@@ -6,17 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 12:18:23 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:54:12 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:32:10 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-La fonction memchr() examine les n premiers octets de la zone mémoire
-pointée par s à la recherche du caractère c.
-Elle cherche le caractere c meme au dela du caract final \0
-renvoit un pointeur sur l'octet correspondant ou NULL
-*/
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr;

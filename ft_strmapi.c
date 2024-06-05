@@ -6,17 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 13:05:50 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:44:36 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:33 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Applique la fonction ’f’ à chaque caractère de la
-chaîne de caractères passée en argument pour créer
-une nouvelle chaîne de caractères (avec malloc(3))
-résultant des applications successives de ’f’.
-*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

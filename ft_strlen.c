@@ -3,18 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melinamotylewski <melinamotylewski@stud    +#+  +:+       +#+        */
+/*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 09:43:16 by memotyle          #+#    #+#             */
-/*   Updated: 2024/05/25 11:16:51 by melinamotyl      ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:29 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-calcule la longueur de la chaîne de caractères s,
-sans compter l'octet nul « \0 » final.
-*/
+
 int	ft_strlen(char *str)
 {
 	int	i;

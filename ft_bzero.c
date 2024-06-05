@@ -6,16 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 14:12:59 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:52:39 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:27 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-La  fonction  bzero() met à 0 les n premiers octets du bloc pointé par s
-(octets contenant « \0 »).
-Ne renvoi aucune valeur
-*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;

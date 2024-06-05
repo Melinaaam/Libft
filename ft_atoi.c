@@ -6,16 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 18:03:09 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:52:15 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:30:22 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-converti un caractere vers un int
-retorune le resultat de la conversion
-*/
 
 int	ft_atoi(const char *str)
 {

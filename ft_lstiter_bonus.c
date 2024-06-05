@@ -6,19 +6,16 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 15:23:27 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:20:11 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:34:37 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Itère sur la liste ’lst’ et applique la fonction
-’f’ au contenu de chaque élément
-*/
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
-		return;
+		return ;
 	while (lst && f)
 	{
 		f(lst->content);

@@ -6,18 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 13:45:43 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 15:38:27 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:25 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-copie jusuqu'a size -1 caracteres de la chaine src vers dest
-et garanti qu'elle termine toujours par '\0'
-evite debordement de memoire
-retourne nb total de caracteres de src
-*/
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {

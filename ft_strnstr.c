@@ -6,22 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 11:58:26 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 12:00:18 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:45 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-	 echercher une sous-chaîne dans une autre chaîne,
-	 mais seulement dans les 'n' premiers caractères de la chaîne source.
-
-	 Les caractères qui apparaissent après un caractère `\0' ne sont pas recherchés.
-
-	 Si "Souschaine" est une chaîne vide, "chainP" est renvoyé ;
-	 si "Souschaine" n'apparaît nulle part dans "chaineP", NULL est renvoyé ;
-	 sinon, un pointeur vers le premier caractère de la première occurrence
-	 de "Souschaine" est renvoyé.
-*/
 
 char	*ft_strnstr(const char *chaineP, const char *SousChaine, size_t len)
 {

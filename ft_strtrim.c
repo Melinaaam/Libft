@@ -6,16 +6,9 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 14:31:21 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 14:44:14 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:56 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-
-/*
-retourne copie de s1 dans ns sans les caracteres specifies dans 'set',
-au debut et a la fin de la chaine de caractere
-*/
 
 #include "libft.h"
 

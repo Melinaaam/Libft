@@ -6,18 +6,12 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 13:07:18 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 17:20:06 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:31:03 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Libère la mémoire de l’élément passé en argument en
-utilisant la fonction ’del’ puis avec free(3). La
-mémoire de ’next’ ne doit pas être free.
- Cette fonction est utilisée pour supprimer un seul élément d'une liste chaînée,
-*/
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (lst != NULL && del != NULL)

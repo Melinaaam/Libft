@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melinamotylewski <melinamotylewski@stud    +#+  +:+       +#+        */
+/*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 15:10:35 by memotyle          #+#    #+#             */
-/*   Updated: 2024/05/25 11:31:18 by melinamotyl      ###   ########.fr       */
+/*   Updated: 2024/06/05 09:34:04 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//convertit la lettre c en minuscule si c'est possible.
 
 int	ft_tolower(int c)
 {

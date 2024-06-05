@@ -6,17 +6,11 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:58:02 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/04 11:56:59 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/05 09:33:22 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-concatene deux chaines sans risque de debordement
-garanti que la taille totale de dest ne depasse pas size
-retorune la longeur totale de la chaine apre concatenisation
-*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
