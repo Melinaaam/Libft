@@ -6,98 +6,116 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 12:07:59 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:32:54 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/07 14:34:11 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	libere_tab(char **strs, int i)
+#include <stdio.h>
+/*
+retourne un tableau de chaine de caractere obtenu
+en separant 's' a l'aide du caractere 'c'==> utilise comme delimitateur
+le tableau doit etre termine par NULL
+*/
+void	libere_tab(char **tab, int i)
 {
 	while (i >= 0)
 	{
-		free(strs[i]);
+		free(tab[i]);
 		i--;
 	}
-	free(strs);
+	free(tab);
 }
 
-int	comptage_mots(const char *s, char c)
+int	count_words(const char *s, char c)
 {
+	int	count_words;
 	int	i;
-	int	count;
 
+	count_words = 0;
 	i = 0;
-	count = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] != c)
 		{
-			count++;
+			count_words++;
 			while (s[i] != c && s[i] != '\0')
 				i++;
 		}
 		else
 			i++;
 	}
-	return (count);
+	return (count_words);
 }
 
-char	*copier_mots(const char *s, int debut, int fin)
+char	*find_words(const char *s, int start, int end)
 {
-	char	*mot;
+	char	*word;
 	int		i;
 
-	mot = malloc((sizeof (char) * (fin - debut + 1)));
-	if (!mot)
+	word = malloc(sizeof(char) * (end - start + 1));
+	if (!word)
 		return (NULL);
 	i = 0;
-	while (debut < fin)
+	while (start < end)
 	{
-		mot[i] = s[debut];
+		word[i] = s[start];
 		i++;
-		debut++;
+		start++;
 	}
-	mot[i] = '\0';
-	return (mot);
+	word[i] = '\0';
+	return (word);
 }
 
-char	**remplacer_mots(char const *s, char c, char **strs)
+char	**rempli_tab(const char *s, char c, char **tab)
 {
-	int	i;
-	int	j;
-	int	k;
+	int		place_word;
+	int		start;
+	int		i;
 
+	start = 0;
 	i = 0;
-	j = 0;
-	while (s[i] != '\0')
+	place_word = 0;
+	while (s[i])
 	{
 		if (s[i] != c)
 		{
-			k = i;
+			start = i;
 			while (s[i] != c && s[i] != '\0')
 				i++;
-			strs[j] = copier_mots(s, k, i);
-			if (!strs[j])
-				return (libere_tab(strs, j), NULL);
-			j++;
+			tab[place_word] = find_words(s, start, i);
+			if (!tab)
+				return (libere_tab(tab, place_word), NULL);
+			place_word++;
 		}
 		else
 			i++;
 	}
-	strs[j] = NULL;
-	return (strs);
+	tab[place_word] = NULL;
+	return (tab);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**strs;
+	char	**tab;
 
 	if (!s)
 		return (NULL);
-	strs = malloc(sizeof (char *) * (comptage_mots(s, c) + 1));
-	if (!strs)
+	tab = malloc(sizeof (char *) * (count_words(s, c) + 1));
+	if (!tab)
 		return (NULL);
-	strs = remplacer_mots(s, c, strs);
-	return (strs);
+	tab = rempli_tab(s, c, tab);
+	return (tab);
 }
+/*
+int	main()
+{
+	char *str = " Ceci est une phrase";
+	char **tab = ft_split(str, ' ');
+
+	printf("%s\n", tab[0]);
+	printf("%s\n", tab[1]);
+	printf("%s\n", tab[2]);
+	printf("%s\n", tab[3]);
+	return(0);
+}*/
