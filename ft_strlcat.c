@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:58:02 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:33:22 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 11:30:43 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,22 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (dst_len + src_len);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	dest[6] = "Hello";
+	char	*src = " Wolrd";
+	size_t	dstsiz = sizeof(dest);
+
+	printf("Chaine dest : %s\n", dest);
+	printf("Chaine src : %s\n", src);
+	printf("Taille ideale de dest : %zu\n",ft_strlcat(dest, src, dstsiz));
+	printf("Chaine dest apres ft_strlcat: %s\n", dest);
+	return (0);
+}
+
+*/

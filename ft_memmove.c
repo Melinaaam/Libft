@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:32:30 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:32:26 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 10:54:16 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,19 @@ void	*ft_memmove(void *destination, const void *source, size_t n)
 		ft_memcpy(dest, src, n);
 	return (destination);
 }
+
+/*
+#include <stdio.h>
+
+int	main()
+{
+	char	src[10] = "123456";
+
+	printf("Ma chaine SRC est : %s\n", src);
+	ft_memmove(src + 1, src, 1);
+	//mouvement de memoire de n octets a la position pointee par dest dans src
+	printf("Ma chaine apres memmove : %s\n", src);
+	return (0);
+}
+
+*/

@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:46:51 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:30:39 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 10:08:24 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,15 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+
+/*
+#include <stdio.h>
+int	main()
+{
+	int	c;
+
+	c = 1;
+	printf("%d\n", ft_isascii(c));
+	return(0);
+}
+*/

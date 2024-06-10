@@ -6,13 +6,13 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 17:27:53 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:30:49 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 09:42:43 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_number(int n)
+static int	count_number(int n)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ int	count_number(int n)
 	return (i);
 }
 
-char	*rempli_chaine(char *str, int n, int sign, int j)
+static char	*rempli_chaine(char *str, int n, int sign, int j)
 {
 	int	i;
 
@@ -52,7 +52,7 @@ char	*ft_itoa(int n)
 	sign = 0;
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	if (n == 0 || n == -0)
+	if (n == 0)
 		return (ft_strdup("0"));
 	j = count_number(n);
 	if (n < 0)

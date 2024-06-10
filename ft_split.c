@@ -6,18 +6,14 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 12:07:59 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/07 14:34:11 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 10:14:47 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-/*
-retourne un tableau de chaine de caractere obtenu
-en separant 's' a l'aide du caractere 'c'==> utilise comme delimitateur
-le tableau doit etre termine par NULL
-*/
-void	libere_tab(char **tab, int i)
+
+static char	**libere_tab(char **tab, int i)
 {
 	while (i >= 0)
 	{
@@ -25,9 +21,10 @@ void	libere_tab(char **tab, int i)
 		i--;
 	}
 	free(tab);
+	return (NULL);
 }
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	count_words;
 	int	i;
@@ -48,7 +45,7 @@ int	count_words(const char *s, char c)
 	return (count_words);
 }
 
-char	*find_words(const char *s, int start, int end)
+static char	*find_words(const char *s, int start, int end)
 {
 	char	*word;
 	int		i;
@@ -67,7 +64,7 @@ char	*find_words(const char *s, int start, int end)
 	return (word);
 }
 
-char	**rempli_tab(const char *s, char c, char **tab)
+static char	**rempli_tab(const char *s, char c, char **tab)
 {
 	int		place_word;
 	int		start;
@@ -84,8 +81,8 @@ char	**rempli_tab(const char *s, char c, char **tab)
 			while (s[i] != c && s[i] != '\0')
 				i++;
 			tab[place_word] = find_words(s, start, i);
-			if (!tab)
-				return (libere_tab(tab, place_word), NULL);
+			if (!tab[place_word])
+				return (libere_tab(tab, place_word - 1));
 			place_word++;
 		}
 		else
@@ -105,17 +102,22 @@ char	**ft_split(char const *s, char c)
 	if (!tab)
 		return (NULL);
 	tab = rempli_tab(s, c, tab);
+	if (!tab)
+		return (NULL);
 	return (tab);
 }
+
 /*
 int	main()
 {
-	char *str = " Ceci est une phrase";
-	char **tab = ft_split(str, ' ');
+	char *str = "xxxxxxxxhello!";
+	char **tab = ft_split(str, 'x');
+	int		i = 0;
 
-	printf("%s\n", tab[0]);
-	printf("%s\n", tab[1]);
-	printf("%s\n", tab[2]);
-	printf("%s\n", tab[3]);
+	while (tab[i])
+		printf("%s\n", tab[i++]);
+	printf("%s\n", tab[i]);
+	libere_tab(tab, count_words(str, 'x'));
 	return(0);
-}*/
+}
+*/

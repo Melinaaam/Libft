@@ -6,7 +6,7 @@
 /*   By: memotyle <memotyle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 11:58:26 by memotyle          #+#    #+#             */
-/*   Updated: 2024/06/05 09:33:45 by memotyle         ###   ########.fr       */
+/*   Updated: 2024/06/10 11:31:05 by memotyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,17 @@ char	*ft_strnstr(const char *chaineP, const char *SousChaine, size_t len)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	SousChaine[] = "";
+	char	chaineP[19] = "La terre est ronde";
+
+	printf("SousChaine : %s\n", SousChaine);
+	printf("chaineP : %s\n", chaineP);
+	printf("Resultat obtenu : %s", ft_strnstr(chaineP, SousChaine, 19));
+		return (0);
+}
+*/
