@@ -1,4 +1,2 @@
-# Libft : ma Library !
+# Libft : My first own Library !
 Mon premier projet a 42! 
-Taff à garder
-# Libft
