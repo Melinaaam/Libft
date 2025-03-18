@@ -24,9 +24,11 @@ Elle inclut des fonctions de manipulation de chaînes, de gestion de la mémoire
 
 ## Aperçu
 
-Le projet libft est né dans le cadre de l’apprentissage et du perfectionnement en langage C à l’École 42.\
-L’idée est de disposer d’une boîte à outils personnalisée, enrichie au fil des projets et des difficultés rencontrées. Au-delà de simplement reproduire des fonctions de bibliothèques standard (comme <string.h>, <ctype.h>, <stdlib.h>, <stdio.h> ou <unistd.h>), cette bibliothèque a été adaptée et étendue afin d’offrir des solutions plus adaptées à certains besoins spécifiques, tout en améliorant la compréhension du fonctionnement interne de ces fonctions.\
-Les personnalisations incluent notamment une version sur-mesure de printf, ainsi qu’une fonction get_next_line permettant de lire un fichier ou l’entrée standard ligne par ligne. Cette approche permet non seulement de mieux comprendre les rouages du langage C, mais aussi de gagner en efficacité et en flexibilité dans la réalisation de futurs projets.
+La libft est un projet développé dans le cadre de l’apprentissage et du perfectionnement en langage C à l’École 42.\
+Son objectif est de créer sa propre bibliothèque évolutive, enrichie à mesure que les projets et les défis techniques se présentent.\
+Plutôt que de simplement recopier les fonctions des bibliothèques standard comme : _<stdlib.h>, <stdio.h>, <unistd.h> etc..._.\
+Cette bibliothèque a été adaptée et étendue pour répondre à des besoins plus spécifiques, tout en approfondissant la compréhension de leur fonctionnement interne.\
+Parmi les ajouts et modifications, on trouve notamment une implémentation personnalisée de printf et la fonction get_next_line, utile pour lire un fichier ou l’entrée standard ligne par ligne. Cette démarche permet non seulement de maîtriser davantage les subtilités du C, mais aussi de gagner en efficacité et en flexibilité dans la réalisation de projets futurs.
 
 ---
 
